@@ -121,6 +121,8 @@ function Student() {
     for (let i = 0; i < 4; i++) {
         addToDocument(students[i]);
     }
+    var average = averageMark();
+    addAverageMark(average);
 
     var student1 = new Student();
 
@@ -168,6 +170,7 @@ function Student() {
         let value = Number(e.target.value);
         student1.setMark(value);
     })
+    
     markBox.addEventListener("blur", (e) =>{
         var text = markBox.value.trim();
         if(text==="")
@@ -178,8 +181,9 @@ function Student() {
 
     var printButton = document.show.print;
     printButton.addEventListener("click", () =>{
-        if(student1.getFirstName()!="" )
         addToDocument(student1);
+        var el = document.getElementsByClassName("average-mark");
+        el.parentNode.removeChild(el);
         var average = averageMark();
         addAverageMark(average);
     });
