@@ -11,9 +11,15 @@ Task and works in web-programming course.
 ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png) - done
 
 ---
+### 19.10.2020 - DOM, objects, closing.
+Table with information about students
+| Task | Task Status | Additional/Comments |
+| -------- | -------- | --------|  
+| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Task](https://github.com/KaminsLab/Web-Prog.Kaminsky.2020/tree/master/DOM%20and%20objects%2C%20closing)
+---
 
 ### 06.10.2020 - Sorting of array, finding min&max values.
-######An old mehod of working with arrays on Java Sript
+An old mehod of working with arrays on Java Script
 
 | Task | Task Status | Additional/Comments |
 | -------- | -------- | --------|  
