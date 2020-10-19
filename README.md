@@ -17,6 +17,6 @@ Task and works in web-programming course.
 
 | Task | Task Status | Additional/Comments |
 | -------- | -------- | --------|  
-| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-target.png)|[Task](/)
+| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Task](https://github.com/KaminsLab/Web-Prog.Kaminsky.2020/tree/master/Work%20with%20arrays)
 ---
 
