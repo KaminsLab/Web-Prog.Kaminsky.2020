@@ -98,10 +98,23 @@ function Student() {
      element.appendChild(firstName);
      element.appendChild(age);
      element.appendChild(mark);
-     element.appendChild(editButton);
      element.appendChild(removeButton);
      table.appendChild(element);
      students.push(student);
+ }
+
+ var primalObjects = () =>{
+    var buffer = [];
+    for (let i = 0; i < 4; i++) {
+        buffer[i] = new Student();
+    }
+
+    setStudent(buffer[0], "Ivan", "Ivanov", 20, 9);
+    setStudent(buffer[1], "Petr", "Petrov", 23, 7);
+    setStudent(buffer[2], "Sidor", "Sidorov", 22, 10);
+    setStudent(buffer[3], "Mihail", "Blgakov", 18, 4);
+
+    return buffer;
  }
 
  var averageMark = () =>{
@@ -124,16 +137,9 @@ function Student() {
  }
 
 (function(){
-    var buffer = [];
-    for (let i = 0; i < 4; i++) {
-        buffer[i] = new Student();
-    }
 
-    setStudent(buffer[0], "Ivan", "Ivanov", 20, 9);
-    setStudent(buffer[1], "Petr", "Petrov", 23, 7);
-    setStudent(buffer[2], "Sidor", "Sidorov", 22, 10);
-    setStudent(buffer[3], "Mihail", "Blgakov", 18, 4);
-
+    var buffer = primalObjects();
+    
     var students = [];
 
     for (let i = 0; i < 4; i++) {
@@ -179,7 +185,7 @@ function Student() {
         if (!lastNameBox.value){
             swal("Incorrect input!", "Input student's first name again.", "error");
         }
-        if (!ageBox.valu) {
+        if (!ageBox.value) {
             swal("Incorrect input!", "Input student's age again.", "error");
         }
         if (!markBox.value) {
