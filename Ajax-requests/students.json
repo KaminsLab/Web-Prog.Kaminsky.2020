@@ -1,0 +1,36 @@
+[
+  {
+    "firstName": "Mihail",
+    "lastName": "Bulgakov",
+    "age": "20",
+    "mark": 8
+  },
+
+  {
+    "firstName": "Fedor",
+    "lastName": "Dostoevsky",
+    "age": "22",
+    "mark": "4"
+  },
+
+  {
+    "firstName": "Joe",
+    "lastName": "Orwell",
+    "age": "18",
+    "mark": "7"
+  },
+
+  {
+    "firstName": "Erih-Maria",
+    "lastName": "Remark",
+    "age": "21",
+    "mark": "9"
+  },
+
+  {
+    "firstName": "Anton",
+    "lastName": "Chehov",
+    "age": "21",
+    "mark": "10"
+  }
+]
