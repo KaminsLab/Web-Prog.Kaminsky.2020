@@ -1,3 +1,4 @@
+
 function Student() {
     var _firstName;
     var _lastName;
@@ -136,15 +137,64 @@ function Student() {
     return buffer;
  }
 
-(function(){
+ function requestToJSON (students){
+     var requestUrl = "https://raw.githubusercontent.com/KaminsLab/Web-Prog.Kaminsky.2020/master/Ajax-requests/students.json";
+     var request = new XMLHttpRequest();
+     request.open("GET", requestUrl);
 
-    var buffer = primeData();
+     request.responseType = "json";
+     request.send();
+
+     request.onload = function() {
+        if (request.readyState == 4) {
+            if (request.status != 200) {
+                alert(`Error ${request.status}: ${request.statusText}`);
+            } 
+            else {
+                var res = request.response;
+                var size = countNumberOfStudentsinJSON(res);
+                var buffer = getStudentsFromJSON(res, size);
+                
+                for (let i = 0; i < size; i++) {
+                    addToDocument(buffer[i], students);
+                }
+                var el = document.querySelector("h2.average-mark");
+                el.parentNode.removeChild(el);
+                var average = averageMark();
+                addAverageMark(average);
+            }
+        }
+      }
+ }
+
+ function countNumberOfStudentsinJSON(response){
+    var size = 0, key = 'firstName';  
+
+    for (key in response) {
+        if (response.hasOwnProperty(key)) {
+            size++;
+        }
+    }
+    
+    return size;
+ }
+
+ function getStudentsFromJSON(jsonObject, size){
+    var buffer = [];
+    for (let index = 0; index < size; index++) {
+        buffer[index] = new Student();
+        setStudent(buffer[index], jsonObject[index]['firstName'], jsonObject[index]['lastName'], Number(jsonObject[index]['age']), Number(jsonObject[index]['mark']));
+        console.log(buffer[index].getFirstName()); 
+    }
+    
+    return buffer;
+ }
+
+(function(){
 
     var students = [];
 
-    for (let i = 0; i < 4; i++) {
-        addToDocument(buffer[i], students);
-    }
+    requestToJSON(students);
 
     var average = averageMark();
     addAverageMark(average);
