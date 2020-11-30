@@ -11,6 +11,13 @@ Task and works in web-programming course.
 ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png) - done
 
 ---
+### 30.11.2020
+AJAX-request, using JQuery lib
+| Task | Task Status | Additional/Comments |
+| -------- | -------- | --------|  
+| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Task](https://github.com/KaminsLab/Web-Prog.Kaminsky.2020/tree/master/Using%20JQuerry-library)
+---
+
 ### 17.11.2020
 Table with information about students
 | Task | Task Status | Additional/Comments |
