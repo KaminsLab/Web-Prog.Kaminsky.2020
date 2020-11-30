@@ -13,7 +13,7 @@
     background: #d8e615;
     font-weight: bold;
   }
-  .element {
+  .element, .mark {
     color: #CAD4D6;
     background: #252F48;
     border-radius: 8px;
@@ -22,7 +22,7 @@
   .body_row:last-child td {
     border-bottom: none;
   }
-  .element:last-child {
+  .element, .mark:last-child {
     border-right: none;
   }
   .body_row:hover td {
