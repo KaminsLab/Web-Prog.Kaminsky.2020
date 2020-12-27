@@ -164,7 +164,7 @@ function Student() {
                 addAverageMark(average);
             }
         }
-      }
+    }
  }
 
  function countNumberOfStudentsinJSON(response){

@@ -1,0 +1,41 @@
+[
+    {
+      "firstName": "Mihail",
+      "lastName": "Bulgakov",
+      "age": "20",
+      "mark": 8,
+      "id": 1
+    },
+  
+    {
+      "firstName": "Fedor",
+      "lastName": "Dostoevsky",
+      "age": "22",
+      "mark": "4",
+      "id": 2
+    },
+  
+    {
+      "firstName": "Joe",
+      "lastName": "Orwell",
+      "age": "18",
+      "mark": "7",
+      "id": 3
+    },
+  
+    {
+      "firstName": "Erih-Maria",
+      "lastName": "Remark",
+      "age": "21",
+      "mark": "9",
+      "id": 4
+    },
+  
+    {
+      "firstName": "Anton",
+      "lastName": "Chehov",
+      "age": "21",
+      "mark": "10",
+      "id": 5
+    }
+  ]

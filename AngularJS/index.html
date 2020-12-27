@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "tableApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LB 4</title>
+</head>
+<body>
+    <table class = "table">
+        <thead class = "header">
+            <tr class = "header_row">
+                <th class = "header_element">Last name</th>
+                <th class = "header_element">First name</th>
+                <th class = "header_element">Age</th>
+                <th class = "header_element">Rating</th>
+          </tr>
+        </thead>
+        <tbody ng-controller="QuestionController">
+            <tr ng-repeat="item in students" class="body_row">
+                <td class="element">{{item.lastName}}</td>
+                <td class="element">{{item.firstName}}</td>
+                <td class="element">{{item.age}}</td>
+                <td class="mark">{{item.mark}}</td>
+                <td class="edit-remove-buttons">
+                    <button class="btn-default" ng-click="delItem($index)" aria-label="Delete">
+                        <svg aria-hidden="true" class="deleteBtn-icon" width="32" height="32" viewBox="0 0 20 20">
+                            <use xlink:href="img/delete.svg#Capa_1"></use>
+                        </svg>
+                    </button>
+
+                    <button class="btn-default" ng-click="editItem($index)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form name="show" ng-controller="AddingFormController">
+        <input type="text" name="lastName1" class = "addLastName" placeholder="Input last name"></input>
+        <input type="text" name="firstName1" class = "addFirstName" placeholder="Input first name"></input>
+        <input type="text" name="age1" class = "addAge" placeholder="Input age"></input>
+        <input type="text" name="mark1" class = "addMark" placeholder="Input mark"></input>
+        <input type="reset" name = "print" class="button1" value="Add a student" ng-click="addItem($event)" />
+    </form>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="students.js"></script>
+    <script src="node_modules/controllers/request.js"></script>
+    <script src="node_modules/controllers/adding.js"></script>
+
+</body>
+</html>
