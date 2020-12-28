@@ -29,3 +29,60 @@ h1{
   border-collapse: separate; 
   border-spacing: 1px;
 }
+
+.header_element {
+  color: black;
+  border-radius: 8px;
+  padding: 12px 17px;
+  background: #7c7a81;
+  font-weight: bold;
+}
+.element, .mark {
+  color: #CAD4D6;
+  background: #1e2e58;
+  border-radius: 8px;
+  padding: 7px 17px;
+}
+
+.body_row:last-child td {
+  border-bottom: none;
+}
+
+.element, .mark:last-child {
+  border-right: none;
+}
+
+.body_row:hover td {
+  text-decoration: underline;
+  background: #181a1d;
+  transition-duration: 0.5s;
+}
+
+.body_row:hover td:last-child{
+  background:none;
+}
+
+.edit-remove-buttons {
+  color: #CAD4D6;
+  border-radius: 8px;
+  margin-left: auto;
+  width:12%;
+}
+
+.btn-default {
+  background-position: 0 0;
+  color:black;
+  cursor: pointer;
+  background-color: #060331;
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 4px;
+  border-radius:6px;
+}
